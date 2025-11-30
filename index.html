@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ZThriller: No 1 site for Movie & series thrillers</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="zt.png">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+  <!-- HEADER (Logo + Hamburger Menu) -->
+  <header class="top-header">
+    <div class="logo">
+      <img src="zt.png" alt="ZT Logo">
+    </div>
+
+    <!-- Hamburger -->
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+
+  <!-- HIDDEN SLIDE-OUT MENU -->
+  <nav id="sideMenu" class="side-menu">
+    <div class="menu-header">
+      <h2>ZThriller Menu:</h2>
+      <span id="closeMenu" class="close-btn">&times;</span>
+    </div>
+
+    <ul class="menu-list">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Trending</a></li>
+      <li><a href="#">Movies</a></li>
+      <li><a href="#">Series</a></li>
+      <li><a href="#">TV Shows</a></li>
+      <li><a href="#">Top Rated</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- SEARCH BAR (NOW IN BODY SECTION) -->
+  <div class="search-container">
+    <form id="form">
+      <input type="text" id="query" placeholder="Search for a movie..." />
+      <button type="submit">Search</button>
+    </form>
+  </div>
+
+
+  <!-- MOVIE CARDS SECTION -->
+  <div id="section" class="row"></div>
+
+  <!-- Modal -->
+  <div id="movieModal">
+    <div id="modalContent">
+      <span id="closeModal">×</span>
+      <img id="modalImg" src="" alt="Poster" />
+      <h2 id="modalTitle"></h2>
+      <p id="modalRating"></p>
+      <p id="modalOverview"></p>
+      <div id="modalTrailer"></div>
+      <h3>Cast</h3>
+      <div id="castList"></div>
+    </div>
+  </div>
+
+  <footer>
+   <div class="footer-container">
+  <div class="footer-section">
+    <h3>Connect With Us</h3>
+    <ul class="footer-links">
+      <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+      <li><a href="#"><i class="fab fa-x-twitter"></i> Twitter (X)</a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+      <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+    </ul>
+  </div>
+</div>
+    <div class="copyright">
+      <p>&copy; copyright 2025. All Rights Reserved by ZThriller Powered by BlumField Digital (A Division of BlumField Enterprises)</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
